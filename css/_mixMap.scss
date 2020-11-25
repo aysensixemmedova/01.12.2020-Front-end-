@@ -1,0 +1,283 @@
+#mixMap{
+  z-index: 0;
+    background-image: url(../photo/img_hero_6.jpg);
+    height: 60vh;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    .mixtext{
+        h1{
+            padding-top: 1em;
+            color: $color-white;
+            font-weight: 500;
+            font-size: 54px;
+        }
+        p{
+            // padding-top: 8px;
+            font-size: 18px;
+            color: white;
+        }
+        padding-top: 3em ;
+    }
+    .tabMenu{
+        
+        // margin: 5em 50px;
+        padding-top:2em;
+        button{
+            border: none;
+          vertical-align: middle;
+           padding: 5px 10px;
+            background: #1A2B48;
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: 700;
+            transition: background .3s ease-in-out;
+            &:hover{
+                background: #333;
+               
+            }
+        }
+        
+        
+        .tab-plg{
+            position: relative;
+            display: none;
+                &.active{
+                    display: block;
+                    
+                }
+                .tab-content{position: relative;
+                    .destination{
+                        i{
+                            font-size: 22px;
+                            color: #ddd;
+                        }
+                        h6{
+                            color: #5191FA;
+                        }
+                      margin: 0 3em;
+                        &::after{
+                       
+                            content: '';
+                            top: 0;
+                            width:1px;
+                            height:100%;
+                            position: absolute;
+                            background-color: black;
+                        }
+                    }
+                    
+                    background-color: white;
+                   
+                    border: 2px solid  rgb(86, 86, 131);
+                    padding: 20px;
+                    width: 100%;
+                 
+                }
+                .searc-but{
+                    button{
+                        width: 100%;
+                        // margin-left: 40px;
+                        padding: 40px 40px;
+                     background-color: #5191FA;
+                    }
+                }
+            
+   
+         
+        }
+       
+    }
+
+
+@media (max-width:980px) {
+.mixtext{
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+
+   .tabMenu{
+       
+      
+        //    flex-wrap: wrap;
+       .searc-but{
+       flex-wrap: wrap;
+     display: none;
+       }
+       .tab-drop{
+flex-wrap: wrap;
+   .destination{
+     
+    &::after{
+          bottom: 15px;      
+        content: '';
+        // top: 0;
+        width:200px;
+        height:1px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-color: black;
+    }
+    
+   }
+        flex-wrap: wrap;
+       }
+       button{
+           padding: 5px 9px;
+
+       }
+      padding-top: 1px;
+      display: block;
+   } 
+}
+}
+
+
+@media (max-width:768px) {
+    .mixtext{
+        h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    
+    
+       .tabMenu{
+           
+          
+            //    flex-wrap: wrap;
+           .searc-but{
+           flex-wrap: wrap;
+         display: none;
+           }
+           .tab-drop{
+    flex-wrap: wrap;
+       .destination{
+         
+        &::after{
+              bottom: 15px;      
+            content: '';
+            // top: 0;
+            width:200px;
+            height:1px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background-color: black;
+        }
+        
+       }
+            flex-wrap: wrap;
+           }
+           button{
+               padding: 5px 9px;
+    
+           }
+          padding-top: 1px;
+          display: block;
+       } 
+    }
+    @media (max-width:980px) {
+        .mixtext{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        
+        
+           .tabMenu{
+               
+              
+                //    flex-wrap: wrap;
+               .searc-but{
+               flex-wrap: wrap;
+             display: none;
+               }
+               .tab-drop{
+        flex-wrap: wrap;
+           .destination{
+             
+            &::after{
+                  bottom: 15px;      
+                content: '';
+                // top: 0;
+                width:200px;
+                height:1px;
+                left: 0;
+                right: 0;
+                position: absolute;
+                background-color: black;
+            }
+            
+           }
+                flex-wrap: wrap;
+               }
+               button{
+                   padding: 5px 9px;
+        
+               }
+              padding-top: 1px;
+              display: block;
+           } 
+        }
+        
+        
+        
+        @media (max-width:1024px) {
+            .mixtext{
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+            
+            
+               .tabMenu{
+                   
+                  
+                    //    flex-wrap: wrap;
+                   .searc-but{
+                   flex-wrap: wrap;
+                 display: none;
+                   }
+                   .tab-drop{
+            flex-wrap: wrap;
+               .destination{
+                 
+                &::after{
+                      bottom: 15px;      
+                    content: '';
+                    // top: 0;
+                    width:200px;
+                    height:1px;
+                    left: 0;
+                    right: 0;
+                    position: absolute;
+                    background-color: black;
+                }
+                
+               }
+                    flex-wrap: wrap;
+                   }
+                   button{
+                       padding: 5px 9px;
+            
+                   }
+                  padding-top: 1px;
+                  display: block;
+               } 
+            }
+            

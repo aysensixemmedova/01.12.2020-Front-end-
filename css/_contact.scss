@@ -1,0 +1,43 @@
+#contact{
+    position: relative;
+  margin: 1em 0;
+  .contact-img{
+      right: 0;
+      .contact-box{
+        color: $color-white;
+        padding:0 2em ;
+       .tell{
+        padding-top: 4em;
+       }
+          h3{
+              padding-top: 8px;
+              
+          }
+          top: 80px;
+          left: -50px;
+         position: absolute;
+          width: 80%;
+          height: 50%;
+          background-color:#FA5636 ;
+      }
+  }
+  
+}
+#map{
+    width: 100%;
+}
+@media(max-width:980px){
+
+    #contact{
+        .contact-text{
+            padding-top:5px ;
+        }
+        .contact-img{
+            
+           img{
+               visibility: hidden;
+           }
+        }
+    }
+   
+}

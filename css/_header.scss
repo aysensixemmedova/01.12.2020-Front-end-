@@ -1,0 +1,135 @@
+
+#header{
+  
+
+  .tab-nav{
+   background: #1A2B48; 
+   padding-top: 10px;
+   ul{
+     
+     li{  
+      &::after {
+        content: '';
+        width: 1px;
+        height: 25px;
+        padding-top: 2px;
+        position: absolute;
+      background-color: #CDD1D7;
+    }
+     }
+   }
+   a{
+    font-size: 15px;
+font-weight: 400;
+     color: #CDD1D7;
+     padding:0 10px;
+  
+   }
+    }
+
+    .menu{
+        position: fixed;  
+        width: 100%;
+        z-index: 1;
+        .len-width{
+            width: 150px;
+            height: 1px;
+            background-color:$color-grey;
+        }
+          .middle-menu{
+              // position: relative;
+          }
+          .nav-bar{
+              position: relative;
+              ul{
+                  li{
+                      padding: 20px 35px;
+  
+                      a{
+                          color:$color-white;
+                          i{
+                              font-size:.6em
+                          }
+                      }
+                      &.bigMenu{
+                          position: static!important;
+                          .LiDropDown{
+                              width: 100%!important;
+                             
+                          }
+                      }
+                      &.LiDropped,&.bigMenu{
+                          position: relative;
+                          
+                          &:hover{
+                              .LiDropDown{
+                                  opacity: 1;
+                                  visibility: visible;
+                                  transform: translateY(0);
+                                
+                              }
+                          }
+                          .LiDropDown{
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              top:100%;
+                              width: 150px;
+                              background-color: $color-white;
+                              border: 1px solid#333;
+                              opacity: 0;
+                              visibility: hidden;
+                              transform:translateY(5px) ;
+                              transition: .3s ease-in-out;
+                              
+                              li{
+                                  padding: 10px;
+                       
+                                 
+            
+                                  a{
+                                    color: #000;
+                                    text-decoration: none;
+                                  
+                                }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+          .menu-mobile{
+         background-color: black;
+              .mobile-down-menu{
+                
+                  .set{
+                      
+                      .content{
+                          display: none;
+                      }
+                      a{
+                          padding: 10px;
+                          color: $color-white;
+                          display: block;
+                      }
+                      ul{
+                          list-style: none;
+                          padding: o;
+                      }
+                  }
+              }
+          }
+       
+        }
+  
+  
+    @media(max-width:980px){
+      .menu-mobile{
+     position: fixed;
+      }
+    }
+    
+    
+    
+
