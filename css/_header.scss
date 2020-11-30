@@ -30,15 +30,13 @@ font-weight: 400;
     .menu{
         position: fixed;  
         width: 100%;
-        z-index: 1;
+        z-index: 2;
         .len-width{
             width: 150px;
             height: 1px;
             background-color:$color-grey;
         }
-          .middle-menu{
-              // position: relative;
-          }
+        
           .nav-bar{
               position: relative;
               ul{
@@ -100,9 +98,19 @@ font-weight: 400;
           }
       }
           .menu-mobile{
-         background-color: black;
+              position: absolute;
+              z-index: 1;
+       
+           
+           #ico-bar{
+               color: $color-white;
+             
+           }
+         
               .mobile-down-menu{
-                
+                color: #000;
+                background-color:$color-white;
+                display: none;
                   .set{
                       
                       .content{
@@ -110,7 +118,7 @@ font-weight: 400;
                       }
                       a{
                           padding: 10px;
-                          color: $color-white;
+                          color: $color-black;
                           display: block;
                       }
                       ul{
@@ -120,15 +128,11 @@ font-weight: 400;
                   }
               }
           }
-       
+        
         }
   
   
-    @media(max-width:980px){
-      .menu-mobile{
-     position: fixed;
-      }
-    }
+  
     
     
     

@@ -59,7 +59,7 @@
 <ul class="d-flex align-items-center list-unstyled m-0 p-0">
 <li><a style="color: #5191FA;" href="about.html">HOME </a></li>
 <li class="bigMenu">
-  <a href="#">HOTEL <i class="fas fa-chevron-down"></i></a>
+  <a href="contact.html">HOTEL <i class="fas fa-chevron-down"></i></a>
    <div class="d-flex LiDropDown">
        <div class="col-lg-3">
            <ul class="list-unstyled">
@@ -103,7 +103,7 @@
        </div>
    </div>
 </li>
-<li><a href="#">TOUR <i class="fas fa-chevron-down"></i></a></li>
+<li><a href="s">TOUR <i class="fas fa-chevron-down"></i></a></li>
 <li><a href="#">ACTIVITY <i class="fas fa-chevron-down"></i></a>
 </li>
 <li><a href="#">RENTAL <i class="fas fa-chevron-down"></i></a></li>
@@ -136,13 +136,14 @@
 <div class="menu-mobile d-block d-lg-none">
   <div class="container-fluid py-3">
       <div class="row ">
-        <div class="col-4">
+        <div class="col-2">
           <div class="nav-ico ">
-              <i style="color:#fff;" class="fas fa-bars fa-2x"></i>
-          </div>
-          <div class="nav-ico ">
-            <i style="color:#fff;" class="fas fa-times fa-2x"></i>
-        </div>
+              <i  id="ico-bar" class="fas fa-bars fa-2x"></i>
+              <!-- <i id="ico-rem" class="fas fa-times fa-2x "></i> -->
+            </div>
+         
+            
+        
       </div>
         <div class="col-8">
          <img class="img-fluid" src="photo/mix_logo-2.svg" alt="">
@@ -234,12 +235,22 @@
         <button> <h6>Activity</h6></button>  
         <button> <h6>Rental</h6></button>
         <button> <h6>Car Rental</h6></button> 
-        <div class="tab-plg active">
-        <div class="d-flex ">
-        <div class="tab-content  ">
+        <div class="tab-plg  active">
+       
+          <div class="d-flex ">
+            
+        <div class="tab-content m-0 p-0 ">
           
-          <div class="tab-drop d-flex ">
-
+          <div class="tab-drop d-flex m-0 ">
+         
+            <div class="destination">
+              <i class="fas fa-map-marker-alt"></i>
+              
+              <span>Destination</span>
+             <h6>Where are you going ?</h6>
+            
+          </div>
+         
             <div class="destination">
               <i class="fas fa-map-marker-alt"></i>
               
@@ -247,85 +258,245 @@
              <h6>Where are you going ?</h6>
             
             </div>
+   
+         
             <div class="destination">
               <i class="fas fa-calendar"></i>
               
               <span>From-to</span>
              <h6>dd/mm/yyy-dd/mm/yyy </h6>
             
-          
+            </div>
+
+            <div class="searc-but">
+              <button  type="text">Search</button>
+            </div>
           </div>
          
-          </div>
-      
+          
+         
         </div>
+       
+      </div>
+    </div>
+    <div class="tab-plg ">
+       
+      <div class="d-flex ">
+        
+    <div class="tab-content m-0 p-0 ">
+      
+      <div class="tab-drop d-flex m-0 ">
+     
+        <div class="destination">
+          <i class="fas fa-map-marker-alt"></i>
+          
+          <span>Destination</span>
+         <h6>Where are you going ?</h6>
+        
+      </div>
+     
+        <div class="destination">
+          <i class="fas fa-map-marker-alt"></i>
+          
+          <span>Destination</span>
+         <h6>Where are you going ?</h6>
+        
+        </div>
+
+     
+        <div class="destination">
+          <i class="fas fa-calendar"></i>
+          
+          <span>From-to</span>
+         <h6>dd/mm/yyy-dd/mm/yyy </h6>
+        
+        </div>
+
         <div class="searc-but">
           <button  type="submit">Search</button>
         </div>
       </div>
+     
+      
+     
     </div>
-    <div class="tab-plg">
-        <div class="tab-content ">
-          
-          <div class="tab-drop d-flex ">
+   
+  </div>
+</div>
+<div class="tab-plg ">
+       
+  <div class="d-flex ">
+    
+<div class="tab-content m-0 p-0 ">
+  
+  <div class="tab-drop d-flex m-0 ">
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+  </div>
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+    </div>
 
-            <div class="destination">
-              <i class="fas fa-map-marker-alt"></i>
-              
-              <span>Destination</span>
-             <h6>Where are you going ?</h6>
-            
-            </div>
-           
-            
-            <div class="destination">
-              <i class="fas fa-calendar"></i>
-              
-              <span>Check in-out</span>
-             <h6>dd/mm/yyy-dd/mm/yyy </h6>
-            
-          
-          </div>
-         
-          <div class="destination">
-            <i class="fas fa-calendar"></i>
-            
-            <span>Check in-out</span>
-           <h6>dd/mm/yyy-dd/mm/yyy </h6>
-          
-        
-        </div>
-          </div>
-        </div>
-      </div>
-      <div class="tab-plg">
-        <div class="tab-content">
-          
-          <div class="tab-drop d-flex ">
+ 
+    <div class="destination">
+      <i class="fas fa-calendar"></i>
+      
+      <span>From-to</span>
+     <h6>dd/mm/yyy-dd/mm/yyy </h6>
+    
+    </div>
 
-            <div class="destination">
-              <i class="fas fa-map-marker-alt"></i>
-              
-              <span>Destination</span>
-             <h6>Where are you going ?</h6>
-            
-            </div>
-           
-            <div class="destination">
-              <i class="fas fa-calendar"></i>
-              
-              <span>From-to</span>
-             <h6>dd/mm/yyy-dd/mm/yyy </h6>
-            </div>
-          
-          </div>
-          </div>
-          
-        </div>
+    <div class="searc-but">
+      <button  type="submit">Search</button>
+    </div>
+  </div>
+ 
+  
+ 
+</div>
+
+</div>
+</div>
+<div class="tab-plg ">
+       
+  <div class="d-flex ">
+    
+<div class="tab-content m-0 p-0 ">
+  
+  <div class="tab-drop d-flex m-0 ">
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+  </div>
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+    </div>
+
+ 
+    <div class="destination">
+      <i class="fas fa-calendar"></i>
+      
+      <span>From-to</span>
+     <h6>dd/mm/yyy-dd/mm/yyy </h6>
+    
+    </div>
+
+    <div class="searc-but">
+      <button  type="submit">Search</button>
+    </div>
+  </div>
+ 
+  
+ 
+</div>
+
+</div>
+</div>
+<div class="tab-plg ">
+       
+  <div class="d-flex ">
+    
+<div class="tab-content m-0 p-0 ">
+  
+  <div class="tab-drop d-flex m-0 ">
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+  </div>
+ 
+    <div class="destination">
+      <i class="fas fa-map-marker-alt"></i>
+      
+      <span>Destination</span>
+     <h6>Where are you going ?</h6>
+    
+    </div>
+
+ 
+    <div class="destination">
+      <i class="fas fa-calendar"></i>
+      
+      <span>From-to</span>
+     <h6>dd/mm/yyy-dd/mm/yyy </h6>
+    
+    </div>
+
+    <div class="searc-but">
+      <button  type="submit">Search</button>
+    </div>
+  </div>
+ 
+  
+ 
+</div>
+
+</div>
+</div>
        
     </div>
   </div>
     </section>
+    <section id="Special">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="special-item">
+                      <div class="featured-text btn btn-danger">HOLIDAY SALE</div>
+
+                      <div class="special-img spec-1"></div>
+                      <div class="special-text">
+                          <h2 class="item-title">Special Offers</h2>
+                          <p class="item-sub-title">Find Your Perfect Hotels Get the best prices on 20,000+ properties the best prices on</p>
+                          <a href="#" class="btn btn-outline-light">See Deals</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="special-item">
+                      <div class="special-img spec-2"></div>
+                      <div class="special-text">
+                          <h2 class="item-title">Special Offers</h2>
+                          <p class="item-sub-title">Find Your Perfect Hotels Get the best prices on 20,000+ properties the best prices on</p>
+                          <a href="#" class="btn btn-outline-light">See Deals</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="special-item ">
+                      <div class="special-img spec-3"></div>
+                      <div class="special-text">
+                          <h2 class="item-title">Special Offers</h2>
+                          <p class="item-sub-title">Find Your Perfect Hotels Get the best prices on 20,000+ properties the best prices on</p>
+                          <a href="#" class="btn btn-outline-light">See Deals</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 <section id="region">
   <div class="container">
     <div class="row">
@@ -335,7 +506,7 @@
       <h1>NEW JERSY</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>24Tours</li>
           <li>23Activites</li>
@@ -351,7 +522,7 @@
       <h1>SAN FRANSISCO</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>20Hotels</li>
           <li>20Hotels</li>
@@ -367,7 +538,7 @@
       <h1>VIRGINA</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>20Hotels</li>
           <li>20Hotels</li>
@@ -383,7 +554,7 @@
       <h1>CALIFORNIA</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>20Hotels</li>
           <li>20Hotels</li>
@@ -399,7 +570,7 @@
       <h1>LOS ANGELES</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>20Hotels</li>
           <li>20Hotels</li>
@@ -415,7 +586,7 @@
       <h1>NEVEDA</h1>
       <div class="lemgth"></div>
       <div class="region-text">
-        <ul class="d-flex">
+        <ul class="d-flex list-unstyled">
           <li>20Hotels</li>
           <li>20Hotels</li>
           <li>20Hotels</li>

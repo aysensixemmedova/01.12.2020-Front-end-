@@ -1,17 +1,11 @@
 
-  
-  // $(window).resize(function() {
-  //   if ($(window).width() > 768) {
-  //     $(".nav-menu").removeAttr("style");
-  //   }
-  // });
-  
-  // $("ul li").hover(function() {
-  //   $(this)
-  //     .children("ul")
-  //     .stop()
-  //     .slideToggle(500);
-  // });
+  $(".nav-ico").on("click",function(){
+    // $(this).find("#ico-rem").toggle()
+     $(this).find("#ico-bar").slideDown()
+
+     $(".mobile-down-menu").slideToggle(500)
+  })
+
   $(".menu-mobile .mobile-down-menu .set a").click(function(){
     //  $(this).find("i").removeClass()
         
@@ -72,4 +66,32 @@ $('#slider').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+
+
+$(document).ready(function() {
+  $(".set > a").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".content")
+        .slideUp(200);
+      $(".set > a i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".set > a i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this)
+        .find("i")
+        .removeClass("fa-plus")
+        .addClass("fa-minus");
+    
+      $(".content").slideUp(200);
+      $(this)
+        .siblings(".content")
+        .slideDown(200);
+    }
+  });
 });

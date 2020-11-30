@@ -4,7 +4,6 @@ $color-light: #f9f8f6;
 $color-dark: #333333;
 $color-grey: #9fa0a6;
 $color-blue:#567490;
-
 $blue:#5191FA;
 
 @import '_header';
@@ -13,6 +12,9 @@ $blue:#5191FA;
 @import'_region';
 @import'_footer';
 @import'_contact';
+@import'_search';
 @import'_card';
 @import'_tap';
+@import'_special'
+
 

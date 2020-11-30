@@ -22,7 +22,7 @@
 #header .menu {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 #header .menu .len-width {
@@ -92,7 +92,18 @@
 }
 
 #header .menu-mobile {
-  background-color: black;
+  position: absolute;
+  z-index: 1;
+}
+
+#header .menu-mobile #ico-bar {
+  color: #fff;
+}
+
+#header .menu-mobile .mobile-down-menu {
+  color: #000;
+  background-color: #fff;
+  display: none;
 }
 
 #header .menu-mobile .mobile-down-menu .set .content {
@@ -101,19 +112,13 @@
 
 #header .menu-mobile .mobile-down-menu .set a {
   padding: 10px;
-  color: #fff;
+  color: #121212;
   display: block;
 }
 
 #header .menu-mobile .mobile-down-menu .set ul {
   list-style: none;
   padding: o;
-}
-
-@media (max-width: 980px) {
-  .menu-mobile {
-    position: fixed;
-  }
 }
 
 #mixMap {
@@ -172,31 +177,23 @@
 #mixMap .tabMenu .tab-plg .tab-content {
   position: relative;
   background-color: white;
-  border: 2px solid #565683;
   padding: 20px;
   width: 100%;
 }
 
-#mixMap .tabMenu .tab-plg .tab-content .destination {
-  margin: 0 3em;
+#mixMap .tabMenu .tab-plg .tab-content .tab-drop {
+  height: 110px;
 }
 
-#mixMap .tabMenu .tab-plg .tab-content .destination i {
-  font-size: 22px;
-  color: #ddd;
+#mixMap .tabMenu .tab-plg .tab-content .tab-drop .destination {
+  background-color: white;
+  padding-left: 1em;
+  width: 33.333%;
+  border: 1px solid #b9b6b6;
 }
 
-#mixMap .tabMenu .tab-plg .tab-content .destination h6 {
+#mixMap .tabMenu .tab-plg .tab-content .tab-drop .destination h6 {
   color: #5191FA;
-}
-
-#mixMap .tabMenu .tab-plg .tab-content .destination::after {
-  content: '';
-  top: 0;
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  background-color: black;
 }
 
 #mixMap .tabMenu .tab-plg .searc-but button {
@@ -205,147 +202,46 @@
   background-color: #5191FA;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 790px) {
+  #mixMap {
+    height: 80vh;
+  }
   #mixMap .mixtext h1 {
+    font-size: 25px;
+  }
+  #mixMap .tabMenu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #mixMap .tabMenu button {
+    padding: 5px 30px;
+  }
+  #mixMap .tabMenu button h6 {
     font-size: 20px;
   }
-  #mixMap .mixtext p {
-    font-size: 10px;
+  #mixMap .tabMenu .tab-plg .searc-but {
+    width: 100%;
+    height: 20px;
+  }
+  #mixMap .tabMenu .tab-content .tab-drop {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  #mixMap .tabMenu .tab-content .tab-drop .destination {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1044px) {
+  #mixMap .mixtext {
+    padding-top: 20px;
+  }
+  #mixMap .mixtext h1 {
+    font-size: 30px;
   }
   #mixMap .tabMenu {
     padding-top: 1px;
-    display: block;
-  }
-  #mixMap .tabMenu .searc-but {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: none;
-  }
-  #mixMap .tabMenu .tab-drop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  #mixMap .tabMenu .tab-drop .destination::after {
-    bottom: 15px;
-    content: '';
-    width: 200px;
-    height: 1px;
     left: 0;
-    right: 0;
-    position: absolute;
-    background-color: black;
-  }
-  #mixMap .tabMenu button {
-    padding: 5px 9px;
-  }
-}
-
-@media (max-width: 768px) {
-  .mixtext h1 {
-    font-size: 20px;
-  }
-  .mixtext p {
-    font-size: 10px;
-  }
-  .tabMenu {
-    padding-top: 1px;
-    display: block;
-  }
-  .tabMenu .searc-but {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: none;
-  }
-  .tabMenu .tab-drop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .tabMenu .tab-drop .destination::after {
-    bottom: 15px;
-    content: '';
-    width: 200px;
-    height: 1px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background-color: black;
-  }
-  .tabMenu button {
-    padding: 5px 9px;
-  }
-}
-
-@media (max-width: 980px) {
-  .mixtext h1 {
-    font-size: 20px;
-  }
-  .mixtext p {
-    font-size: 10px;
-  }
-  .tabMenu {
-    padding-top: 1px;
-    display: block;
-  }
-  .tabMenu .searc-but {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: none;
-  }
-  .tabMenu .tab-drop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .tabMenu .tab-drop .destination::after {
-    bottom: 15px;
-    content: '';
-    width: 200px;
-    height: 1px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background-color: black;
-  }
-  .tabMenu button {
-    padding: 5px 9px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .mixtext h1 {
-    font-size: 20px;
-  }
-  .mixtext p {
-    font-size: 10px;
-  }
-  .tabMenu {
-    padding-top: 1px;
-    display: block;
-  }
-  .tabMenu .searc-but {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: none;
-  }
-  .tabMenu .tab-drop {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .tabMenu .tab-drop .destination::after {
-    bottom: 15px;
-    content: '';
-    width: 200px;
-    height: 1px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background-color: black;
-  }
-  .tabMenu button {
-    padding: 5px 9px;
   }
 }
 
@@ -410,13 +306,13 @@
 }
 
 #region {
-  margin: 2em 0;
+  margin: 6em 0;
 }
 
 #region .region-img {
   position: relative;
   border-radius: 5px;
-  margin: 1em 0;
+  margin: 2em 0;
   overflow: hidden;
 }
 
@@ -601,6 +497,160 @@
   }
 }
 
+#searcMap .searc-text {
+  color: white;
+  padding-top: 5em;
+}
+
+#searcMap .searc-pls {
+  display: none;
+  padding-left: 70px;
+}
+
+#searcMap .searc-pls input {
+  width: 100%;
+  border: none;
+  height: 50px;
+}
+
+#searcMap .searc-pls button {
+  background: #5191FA;
+  padding: 12px 22px;
+}
+
+#searcMap .searc-drop {
+  padding-top: 6em;
+}
+
+#searcMap .searc-drop .destination {
+  z-index: 1;
+  padding: 1em;
+  width: 100%;
+  background-color: white;
+  height: 95px;
+  border: 1px solid #ccc;
+  color: #CBCFD3;
+}
+
+#searcMap .searc-drop .destination span {
+  color: #5E6D77;
+}
+
+#searcMap .searc-drop .destination h6 {
+  color: #5191FA;
+}
+
+#searcMap .searc-drop .destination .search-but {
+  padding-left: 29px;
+}
+
+#searcMap .searc-drop .destination .search-but button {
+  padding: 15px 40px;
+  background: #5191FA;
+}
+
+@media (max-width: 1024px) {
+  #searcMap .searc-text {
+    text-align: center;
+    padding-top: 4em;
+  }
+  #searcMap .searc-text h1 {
+    font-size: 25px !important;
+  }
+  #searcMap .searc-drop {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+  #searcMap .searc-pls {
+    display: block;
+  }
+  #map3 {
+    display: none;
+  }
+}
+
+#Hotel .accordon-container {
+  position: relative;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+}
+
+#Hotel .accordon-container .set {
+  border: 1px solid #ddd;
+  margin-top: 2em;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#Hotel .accordon-container .set a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#Hotel .accordon-container .set a i {
+  float: right;
+  margin-top: 2px;
+}
+
+#Hotel .accordon-container .set .content {
+  background-color: #fff;
+  padding: 1em 0;
+}
+
+#Hotel .hotel-img {
+  border-radius: 5px;
+  margin: 1em  0;
+}
+
+#Hotel .hotel-img .img-from {
+  overflow: hidden;
+}
+
+#Hotel .hotel-img .img-from ul {
+  position: absolute;
+  top: 130px;
+}
+
+#Hotel .hotel-img .img-from ul li i {
+  color: #FA5636;
+  font-size: 10px;
+}
+
+#Hotel .hotel-img .img-from button {
+  border: none;
+  z-index: 1;
+  top: 20px;
+  position: absolute;
+}
+
+#Hotel .hotel-img .img-from img {
+  position: relative;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#Hotel .hotel-img .img-from img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#Hotel .hotel-img .hotel-text a {
+  color: #172950;
+  font-size: 18px;
+}
+
 .clear {
   clear: both;
 }
@@ -732,5 +782,74 @@
   left: 0;
   border-radius: 50%;
   opacity: 0;
+}
+
+#Special {
+  margin-top: 25px;
+}
+
+#Special .special-item {
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+#Special .special-item .featured-text {
+  position: absolute;
+  top: 10%;
+  left: 18px;
+  z-index: 1;
+}
+
+#Special .special-item .special-text {
+  color: white;
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 15px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#Special .special-item .special-text a {
+  margin-top: 4em;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#Special .special-item:hover a {
+  opacity: 1;
+}
+
+#Special .special-item:hover .special-text {
+  top: 60%;
+}
+
+#Special .special-item:hover .special-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#Special .special-item .special-img {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#Special .special-item .special-img.spec-1 {
+  background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_1.jpg);
+}
+
+#Special .special-item .special-img.spec-2 {
+  background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_2.jpg);
+}
+
+#Special .special-item .special-img.spec-3 {
+  background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_3.jpg);
 }
 /*# sourceMappingURL=style.css.map */
