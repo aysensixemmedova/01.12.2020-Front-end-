@@ -48,31 +48,7 @@
        }
         }
     
-@media(max-width:1024px){
-    #searcMap{
-     .searc-text{
-         text-align: center;
-        padding-top: 4em;
-        h1{
-            font-size: 25px!important;
-        }
-        
-     }
-        .searc-drop{
-            flex-wrap: wrap;
-            opacity: 0;
-            display: none;
-            visibility: hidden;
-        }
-        .searc-pls{
-            // padding-top: 2px;
-         display: block;
-        }
-    }
-   #map3{
-       display: none;
-   }
-}
+
 
 #Hotel{
     .accordon-container{
@@ -81,7 +57,7 @@
         height: auto;
         margin: 20px auto;
         
-        .set{
+        .det{
             border: 1px solid #ddd;
             margin-top: 2em ;
             // padding: 2em 0;
@@ -122,7 +98,7 @@
       .img-from{
         ul{
             position: absolute;
-            top:130px;
+            top:200px;
             li{
                 i{
                 color: #FA5636;
@@ -150,6 +126,14 @@ transform: scale(1.1);
     
         }
         .hotel-text{
+            i{
+                color: $color-grey;
+            }
+            p{
+                font-size: 15px;
+                color: $color-grey;  
+            }
+           
             // margin: 1.3em;
             a{
                 color: #172950;
@@ -161,4 +145,28 @@ transform: scale(1.1);
     }
 }
 
-    
+@media(max-width:1024px){
+    #searcMap{
+     .searc-text{
+         text-align: center;
+        padding-top: 4em;
+        h1{
+            font-size: 25px!important;
+        }
+        
+     }
+        .searc-drop{
+            flex-wrap: wrap;
+            opacity: 0;
+            display: none;
+            visibility: hidden;
+        }
+        .searc-pls{
+            // padding-top: 2px;
+         display: block;
+        }
+    }
+   #map3{
+       display: none;
+   }
+}

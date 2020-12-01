@@ -88,6 +88,9 @@ font-weight: 400;
                                   a{
                                     color: #000;
                                     text-decoration: none;
+                                    &:hover{
+                                        color: $blue;
+                                    }
                                   
                                 }
                               }
@@ -131,7 +134,7 @@ font-weight: 400;
         
         }
   
-  
+
   
     
     

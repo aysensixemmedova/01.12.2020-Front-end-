@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="vendors/slick/slick.css">
     <link rel="stylesheet" href="vendors/slick/slick-theme.css">
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
 </head>
 <body>
+  <!-- header start  -->
     <header id="header">
         <div class="tab-nav">
 <div class="container-fluid">
@@ -103,8 +105,52 @@
        </div>
    </div>
 </li>
-<li><a href="s">TOUR <i class="fas fa-chevron-down"></i></a></li>
-<li><a href="#">ACTIVITY <i class="fas fa-chevron-down"></i></a>
+
+<li><a href="searc.html">TOUR <i class="fas fa-chevron-down"></i></a></li>
+<li class="bigMenu">
+  <a href="blog.html">ACTIVITY <i class="fas fa-chevron-down"></i></a>
+   <div class="d-flex LiDropDown">
+       <div class="col-lg-3">
+           <ul class="list-unstyled">
+               <li><a href="">Listing</a></li>
+               <div class="len-width"></div>
+               <li><a href="">Search Popup Map</a></li>
+               <div class="len-width"></div>
+               <li><a href="">Search Half Map</a></li>
+               <div class="len-width"></div>
+               <li><a href="">Search Full Map</a></li>
+               
+           </ul>
+       </div>
+       <div class="col-lg-3">
+        <ul class="list-unstyled">
+            <li><a href="">Single Detail</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Booking At The Sidebar</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Booking At The Bottom</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Top Half-Map</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Top Slider Image</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Top Slider Image</a></li>
+            <div class="len-width"></div>
+            <li><a href="">Top Slider Image</a></li>
+        </ul>
+    </div>
+       <div class="col-lg-3">
+           <ul class="list-unstyled">
+               <li><a href="">House</a></li>
+               <div class="len-width"></div>
+               <li><a href="">Top-slider</a></li>
+              
+           </ul>
+       </div>
+       <div class="col-lg-3">
+         <img class="img-fluid pt-1" src="photo/banner_megamenu-165x256.png" alt="">
+       </div>
+   </div>
 </li>
 <li><a href="#">RENTAL <i class="fas fa-chevron-down"></i></a></li>
 <li class="LiDropped">
@@ -155,7 +201,7 @@
           <div class="set">
             <a href="#" class="d-flex justify-content-between">
                 <span>
-              Vestibulum 
+             HOME
           </span>
           <i class="fas fa-chevron-down"></i>
             </a>
@@ -171,7 +217,7 @@
           </div>
           <div class="set">
             <a href="#" class="d-flex justify-content-between">
-              <span>Phasellus</span>  
+              <span>HOTEL</span>  
               <i class="fas fa-chevron-down"></i>
             </a>
             <div class="content">
@@ -186,7 +232,7 @@
           </div>
           <div class="set">
             <a href="#" class="d-flex justify-content-between" >
-          <span> Praesent </span>   
+          <span>TOUR </span>   
           <i class="fas fa-chevron-down"></i>
             </a>
             <div class="content">
@@ -201,7 +247,7 @@
           </div>
           <div class="set">
             <a href="#"class="d-flex justify-content-between">
-            <span> Curabitur </span> 
+            <span> ACTIVITY </span> 
             <i class="fas fa-chevron-down"></i>
             </a>
             <div class="content">
@@ -222,6 +268,8 @@
   </div>
 </div>
     </header>
+    <!-- header end  -->
+    <!-- mixmap start  -->
     <section id="mixMap">
        <div class="container">
          <div class="mixtext">
@@ -235,6 +283,7 @@
         <button> <h6>Activity</h6></button>  
         <button> <h6>Rental</h6></button>
         <button> <h6>Car Rental</h6></button> 
+        <button> <h6>Car Transfer</h6></button> 
         <div class="tab-plg  active">
        
           <div class="d-flex ">
@@ -252,21 +301,22 @@
           </div>
          
             <div class="destination">
-              <i class="fas fa-map-marker-alt"></i>
+              <i class="fas fa-calendar"></i>
               
-              <span>Destination</span>
-             <h6>Where are you going ?</h6>
-            
+              <span>From-to</span>
+             <br>
+            <input style="border: none;color: #5191FA;" name="myinp" type="text" value="dd/mm/yyy-dd/mm/yyy">
             </div>
    
          
             <div class="destination">
-              <i class="fas fa-calendar"></i>
+              <i class="fas fa-users"></i>
               
-              <span>From-to</span>
-             <h6>dd/mm/yyy-dd/mm/yyy </h6>
+              <span>Advance</span>
+             <h6>More</h6>
             
             </div>
+            
 
             <div class="searc-but">
               <button  type="text">Search</button>
@@ -459,6 +509,8 @@
     </div>
   </div>
     </section>
+    <!-- mixmap end  -->
+    <!-- special start  -->
     <section id="Special">
       <div class="container">
           <div class="row">
@@ -497,6 +549,8 @@
           </div>
       </div>
   </section>
+  <!-- special end  -->
+  <!-- region start  -->
 <section id="region">
   <div class="container">
     <div class="row">
@@ -550,7 +604,7 @@
   </div>
   <div class="col-lg-4">
     <div class="region-img">
-      <img  src="photo/5.jpg" alt="">
+      <img  src="photo/nvega4sss.jpg" alt="">
       <h1>CALIFORNIA</h1>
       <div class="lemgth"></div>
       <div class="region-text">
@@ -582,7 +636,7 @@
   </div>
   <div class="col-lg-4">
     <div class="region-img">
-      <img  src="photo/6.jpg" alt="">
+      <img  src="photo/nevaga_2aaaa.jpg" alt="">
       <h1>NEVEDA</h1>
       <div class="lemgth"></div>
       <div class="region-text">
@@ -600,7 +654,8 @@
 </div>
 </div>
 </section>
-
+<!-- region end  -->
+<!-- slider start  -->
     <div class="container">
     <section id="slider">
   
@@ -798,6 +853,8 @@
     
     </section>
   </div>
+  <!-- slider end  -->
+  <!-- footer start  -->
   <footer id="footer">
     <div class="footer-one">
 
@@ -898,10 +955,15 @@
 </div>
  
   </footer>
+  <!-- footer end  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="vendors/jquery/jquery-3.5.1.js"></script>
     <script src="vendors/slick/slick.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
-
+  
     <script src="js/app.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 </html>

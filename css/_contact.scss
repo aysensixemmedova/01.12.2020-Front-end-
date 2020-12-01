@@ -1,7 +1,8 @@
 #contact{
-    position: relative;
+   
   margin: 1em 0;
   .contact-img{
+    position: relative;
       right: 0;
       .contact-box{
         color: $color-white;
@@ -21,10 +22,14 @@
           background-color:#FA5636 ;
       }
   }
+
   
 }
 #map{
     width: 100%;
+}
+.clear{
+    clear: both;
 }
 @media(max-width:980px){
 
@@ -33,11 +38,23 @@
             padding-top:5px ;
         }
         .contact-img{
-            
+            .contact-box{
+                top:5px ;
+                
+                margin-left: 50px;
+                width: 90%;
+                height: 50vh;
+            }
            img{
-               visibility: hidden;
+            // display: none;
+            //   visibility: hidden;
+              opacity: 0;
+           width: 50%;
            }
         }
+      
     }
-   
+//    #map{
+//        margin-top: 9em;
+//    }
 }

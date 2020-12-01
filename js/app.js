@@ -70,28 +70,44 @@ $('#slider').slick({
 
 
 $(document).ready(function() {
-  $(".set > a").on("click", function() {
+  $(".det > a").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this)
         .siblings(".content")
         .slideUp(200);
-      $(".set > a i")
+      $(".det > a i")
         .removeClass("fa-minus")
-        .addClass("fa-plus");
+        .addClass(" fa-angle-down");
     } else {
-      $(".set > a i")
+      $(".det > a i")
         .removeClass("fa-minus")
-        .addClass("fa-plus");
+        .addClass("fa-angle-down");
       $(this)
         .find("i")
-        .removeClass("fa-plus")
+        .removeClass(" fa-angle-down")
         .addClass("fa-minus");
     
       $(".content").slideUp(200);
       $(this)
-        .siblings(".content")
-        .slideDown(200);
+        .siblings(".content").stop()
+        .slideDown(200).stop();
     }
   });
 });
+
+
+
+
+
+
+$('#MySlider1').slick({
+  dots: true,
+  infinite: true,
+  centerMargin: '60px',
+  speed: 300,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true
+});
+

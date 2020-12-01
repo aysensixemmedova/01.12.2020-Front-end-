@@ -1,5 +1,5 @@
 #Special{
-    margin-top: 25px;
+    margin-top: 3em;
     .special-item{
         height: 380px;
         overflow: hidden;
@@ -53,5 +53,10 @@
                 background-image: url(https://mixmap.travelerwp.com/wp-content/uploads/2019/02/image_banner_3.jpg);
             }
         }
+    }
+}
+@media(max-width:790px){
+    #Special{
+        padding-top:3em ;
     }
 }
